@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model IEnumerable<MVCDatatableApp.Models.Customer>
+
+<!doctype html>
+<html>
+<head>
+    <title>@ViewBag.Title - MVC Datatables App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Customer Report</h3>
+
+        <div class="span12">
+            <table class="table table-striped" id="datatab">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.City)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Postal)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Company)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Account)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CreditCard)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.City)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Postal)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Company)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Account)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CreditCard)
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
